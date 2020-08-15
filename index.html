@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/231ccad722.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
-  <body class="page-landing">
-    <div class="container">
-      <header class="TitleWeb">
-        <h1 class="title">webforum</h1>
-      </header>
-      <main>
-        <form action="" id="login-user">
-          
+  <body>
+    <section class="form-section">
+      <h1>WebForm</h1>
+
+      <div class="form-wrapper">
+        <form>
+          <div class="input-block">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" />
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" />
+          </div>
+          <div class="parar">
+            <p class="parar2">Forgot your password?</p>
+          </div> <br/>
+          <button  type="submit" class="btn-login">Login</button> <br/>
         </form>
-      </main>
-    </div>
+      </div>
+    </section>
+    <ul class="squares"></ul>
+    <script src="script.js"></script>
   </body>
 </html>
