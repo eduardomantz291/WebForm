@@ -23,5 +23,8 @@ body {
 .TitleWeb {
   font-family: 'Roboto Slab', serif;
   font-size: 1.6rem;
-  color: #7be7de;
+  color: #71e9df;
+  text-align: center;
+  justify-content: center;
+  margin: 2.3rem 0 auto;
 }
