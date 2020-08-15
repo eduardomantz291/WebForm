@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,600&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Merriweather+Sans&display=swap');
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -11,20 +13,232 @@ body {
 }
 
 body {
-  background: #fff3f3;
-  font: 500 1.6rem 'Overpass', sans-serif;
+  background-color: rgb(241, 239, 239);
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
-#container {
-  width: 90vw;
-  max-width: 700px;
-}
-
-.TitleWeb {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.6rem;
-  color: #71e9df;
-  text-align: center;
+section {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 2.3rem 0 auto;
+  align-items: center;
+}
+
+h1 {
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  color: rgb(0, 255, 234);
+  text-decoration: underline;
+  animation: title 500ms;
+  font-family: 'Lobster', cursive;
+}
+
+form {
+  margin: 20px 0;
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px gray;
+}
+
+form .input-block {
+  margin-bottom: 20px;
+}
+
+form .input-block label {
+  font-size: 12pt;
+  color: rgb(65, 137, 165);
+}
+
+form .input-block input {
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  padding: 7px;
+  font-size: 16px;
+  color: #62d3c9;
+  border-radius: 2px;
+  border: 2px solid #ccddef;
+  outline-color: #62d3c9;;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+form .btn-login {
+  display: block;
+  min-width: 120px;
+  border: none;
+  background-color: #62d3c9;
+  color: white;
+  border-radius: 25px;
+  margin: auto;
+  padding: 7px;
+  transition: background 400ms ease;
+}
+
+div.parar {
+  color: rgb(154, 209, 211);
+  text-align: center;
+  animation: move 500ms 650ms backwards;
+}
+
+.btn-login:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #62d3c9;
+  box-shadow: inset 0 0 0 3px #62d3c9;
+}
+
+div .social-media {
+  text-align: center;
+  margin: auto;
+}
+
+.list-social-media {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.item-social-media {
+  background:  #62d3c9;
+  color: white;
+  border: 2px solid  #62d3c9;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  transition: background 500ms ease;
+  animation: move 500ms 1250ms backwards;
+}
+
+.item-social-media:hover{
+  background: white;
+  color: #62d3c9;
+}
+
+form {
+  overflow: hidden;
+}
+
+form {
+  animation: fade 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(1) {
+  animation: move 500ms;
+  animation-delay: 150ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(2) {
+  animation: move 500ms;
+  animation-delay: 350ms;
+  animation-fill-mode: backwards;
+}
+
+form .btn-login {
+  animation: move 500ms;
+  animation-delay: 950ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateX(-35%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    transform: translateX(-50%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+}
+
+.form-Right{
+  animation: Right 1s forwards;
+}
+
+@keyframes Right {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-50vh);
+  }
+
+  100% {
+    transform: translateX(200vh);
+  }
+}
+
+form.validate-error {
+  animation: nono 200ms linear, fade paused;
+  animation-iteration-count: 2;
+}
+
+@keyframes nono {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-15%);
+  }
+  70% {
+    transform: translateX(15%);
+  }
+}
+
+body {
+  overflow: hidden;
+}
+
+.squares li {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(135, 240, 233, 0.616);
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  border-radius: 50px;
+  animation: up 2s infinite alternate;
+  z-index:-1
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-800px) rotate(960deg);
+  }
 }
