@@ -1,3 +1,7 @@
-Devforum
+WebForum
 
-O Devforum foi só um projeto para ininciar os meus estudos sobre node.js e sqlite
+
+What is
+
+This project was the beginning of my study on node.js, sqlite
+and express.
