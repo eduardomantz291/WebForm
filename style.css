@@ -24,18 +24,26 @@ section {
   align-items: center;
 }
 
+header.titleweb {
+  background: rgb(58, 255, 239);
+  width: 100%;
+  text-align: center;
+}
+
 h1 {
-  font-size: 42px;
+  font-size: 50px;
   letter-spacing: 1px;
   margin: 20px 0;
-  color: rgb(0, 255, 234);
+  color: #ffffff;
   text-decoration: underline;
   animation: title 500ms;
+  animation-delay: 240ms;
+  animation-fill-mode: backwards;
   font-family: 'Lobster', cursive;
 }
 
 form {
-  margin: 20px 0;
+  margin: 60px 0;
   background-color: white;
   padding: 30px 25px;
   border-radius: 15px;
@@ -88,32 +96,8 @@ div.parar {
   box-shadow: inset 0 0 0 3px #62d3c9;
 }
 
-div .social-media {
-  text-align: center;
-  margin: auto;
-}
-
-.list-social-media {
-  list-style-type: none;
-  display: inline-flex;
-}
-
-.item-social-media {
-  background:  #62d3c9;
-  color: white;
-  border: 2px solid  #62d3c9;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  transition: background 500ms ease;
-  animation: move 500ms 1250ms backwards;
-}
-
-.item-social-media:hover{
-  background: white;
-  color: #62d3c9;
+header.titleweb {
+  animation: TitleDown 500ms;
 }
 
 form {
@@ -169,11 +153,11 @@ form .btn-login {
 @keyframes title {
   from {
     opacity: 0;
-    transform: translateX(-50%)
+    transform: translateY(-50%)
   }
   to {
     opacity: 1;
-    transform: translateX(0%)
+    transform: translateY(0%)
   }
 }
 
@@ -181,17 +165,12 @@ form .btn-login {
   animation: Right 1s forwards;
 }
 
-@keyframes Right {
-  0% {
-    transform: translateX(0%);
+@keyframes TitleDown {
+  from {
+    transform: translateY(-50%);
   }
-
-  50% {
-    transform: translateX(-50vh);
-  }
-
-  100% {
-    transform: translateX(200vh);
+  to {
+    transform: translateY(0%);
   }
 }
 
