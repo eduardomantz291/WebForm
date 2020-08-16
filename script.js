@@ -21,8 +21,6 @@ function validate() {
           formError.classList.remove("validate-error");
         }
       });
-    } else {
-      form.classList.add("form-hide");
     }
   });
 
@@ -46,8 +44,6 @@ function validate() {
           formError.classList.remove("validate-error");
         }
       });
-    } else {
-      form.classList.add("form-hide");
     }
   });
 
