@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/231ccad722.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleRegister.css">
     <title>Document</title>
   </head>
@@ -14,7 +13,7 @@
         <h1>WebForm</h1>
       </header>
       <div class="form-wrapper">
-        <form action="" name="form">
+        <form name="form" action="index.html">
           <div class="input-block">
             <label for="register-name">Name</label>
             <input type="text" id="register-name">
@@ -31,11 +30,11 @@
             <label for="register-confirm-password">Confirm Password</label>
             <input type="password" id="register-confirm-password">
           </div>
-          <input type="button" class="btn-register" value="Register" onclick="return validade()">
+          <input type="submit" onclick="return validate()"  class="btn-register" value="Register"/>
         </form>
       </div>
     </section>
     <ul class="squares"></ul>
-    <script src="script.js"></script>
+    <script src="scriptRegister.js"></script>
   </body>
 </html>
