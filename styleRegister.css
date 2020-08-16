@@ -50,6 +50,14 @@ form {
   box-shadow: 3px 3px 3px gray;
 }
 
+form {
+  margin: 60px 0;
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px gray;
+}
+
 form .input-block {
   margin-bottom: 20px;
 }
@@ -72,7 +80,7 @@ form .input-block input {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-form .btn-login {
+form .btn-register {
   display: block;
   min-width: 120px;
   border: none;
@@ -84,19 +92,12 @@ form .btn-login {
   transition: background 400ms ease;
 }
 
-div.parar a {
-  color: rgb(154, 209, 211);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: move 500ms 650ms backwards;
-}
-
-.btn-login:hover {
+.btn-register:hover {
   background: rgba(0, 0, 0, 0);
   color: #62d3c9;
   box-shadow: inset 0 0 0 3px #62d3c9;
 }
+
 
 header.titleweb {
   animation: TitleDown 500ms;
@@ -124,7 +125,19 @@ form .input-block:nth-child(2) {
   animation-fill-mode: backwards;
 }
 
-form .btn-login {
+form .input-block:nth-child(3) {
+  animation: move 500ms;
+  animation-delay: 550ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(4) {
+  animation: move 500ms;
+  animation-delay: 750ms;
+  animation-fill-mode: backwards;
+}
+
+form .btn-register {
   animation: move 500ms;
   animation-delay: 950ms;
   animation-fill-mode: backwards;
@@ -198,6 +211,7 @@ body {
   overflow: hidden;
 }
 
+/*
 .squares li {
   width: 50px;
   height: 50px;
@@ -223,3 +237,4 @@ body {
     transform: translateY(-800px) rotate(960deg);
   }
 }
+*/
