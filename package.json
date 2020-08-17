@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eduardomantz291/WebForum/issues"
   },
-  "homepage": "https://github.com/eduardomantz291/WebForum#readme"
+  "homepage": "https://github.com/eduardomantz291/WebForum#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
