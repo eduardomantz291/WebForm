@@ -10,5 +10,5 @@ server.get("/register", (req, res) => {
 })
 
 server.listen(5500, () => {
-  console.log("Servidor rodando na url http://127.0.0.1:5500")
-});
+  console.log("Servidor rodando!");
+})
